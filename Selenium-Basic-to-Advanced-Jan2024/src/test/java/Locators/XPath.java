@@ -9,7 +9,7 @@ public class XPath {
 
         WebDriver driver;
 
-        System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "Drivers/msedgedriverlatest.exe");
         driver = new EdgeDriver();
         Thread.sleep(5000);
 
