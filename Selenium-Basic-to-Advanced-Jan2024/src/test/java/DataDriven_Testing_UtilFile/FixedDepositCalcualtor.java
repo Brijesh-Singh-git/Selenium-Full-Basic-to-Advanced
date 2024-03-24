@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class FixedDepositCalcualtor {
+    
     public static void main(String[] args) throws IOException, InterruptedException {
 
         WebDriver driver;
@@ -75,9 +76,7 @@ public class FixedDepositCalcualtor {
             WebElement clear_btn=driver.findElement(By.xpath("//img[@class='PL5']"));
             js.executeScript("arguments[0].click();",clear_btn);  // clicking on clear button
 
-
         }
-
 
 
         driver.quit();
