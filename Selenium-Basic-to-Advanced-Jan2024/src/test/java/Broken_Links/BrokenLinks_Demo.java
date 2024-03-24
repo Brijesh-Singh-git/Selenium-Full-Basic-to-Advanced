@@ -36,12 +36,13 @@ public class BrokenLinks_Demo {
             String targetLink = linkEle.getAttribute("href");
             System.out.println(targetLink);
 
-            
+
             //pre-requisite for checking the broken links
             if(targetLink == null || targetLink.isEmpty()){
                 System.out.println("It is is a Broken Link !!!");
                 continue;
             }
+
 
             //checking link is broken or not
             URL linkurl = new URL(targetLink); //convert String to ---> URL Format
