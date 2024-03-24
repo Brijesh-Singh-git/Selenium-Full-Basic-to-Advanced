@@ -22,18 +22,19 @@ public class Headless_Demo {
 
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver(edgeOptions);
-        
+
         */
 
         //Approach 2) ---> Headless Mode onwards WDM 5+
 
-        EdgeOptions edgeOptions = new EdgeOptions();
+       /* EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.setHeadless(true);
 
-        WebDriver driver = WebDriverManager.edgedriver().capabilities(options).create();
+        WebDriver driver = WebDriverManager.edgedriver().capabilities(options).create(); */
 
 
-
+        WebDriver driver;
+        driver = new EdgeDriver();
 
         //1) Open Browser
         System.setProperty("webdriver.edge.driver", "Drivers/msedgedriverlatest.exe");
