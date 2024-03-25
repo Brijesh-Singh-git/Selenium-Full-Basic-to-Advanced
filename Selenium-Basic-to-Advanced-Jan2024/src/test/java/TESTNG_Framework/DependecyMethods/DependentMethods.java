@@ -14,20 +14,20 @@ public class DependentMethods {
     @Test(priority = 2, dependsOnMethods = {"openapp"})
 
     void login(){
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
 
     }
     @Test(priority = 3, dependsOnMethods = {"login"})
 
     void search(){
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
 
     }
 
     @Test(priority = 3, dependsOnMethods = {"search"})
 
     void advsearch(){
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
 
     }
     @Test(priority = 4, dependsOnMethods = {"advsearch"})
@@ -36,4 +36,5 @@ public class DependentMethods {
         Assert.assertTrue(true);
 
     }
+
 }
