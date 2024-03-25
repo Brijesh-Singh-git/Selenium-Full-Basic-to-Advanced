@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class FixedDepositCalcualtor {
-    
+
     public static void main(String[] args) throws IOException, InterruptedException {
 
         WebDriver driver;
