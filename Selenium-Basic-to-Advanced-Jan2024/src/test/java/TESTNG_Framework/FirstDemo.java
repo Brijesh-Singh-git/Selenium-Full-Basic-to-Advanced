@@ -24,6 +24,7 @@ public class FirstDemo {
         driver.manage().window().maximize();
     }
 
+
     @Test
     void login(){
     driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
