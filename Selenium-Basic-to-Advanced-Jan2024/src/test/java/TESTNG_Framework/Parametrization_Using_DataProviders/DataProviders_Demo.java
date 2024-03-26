@@ -48,7 +48,7 @@ public class DataProviders_Demo {
 
 
 
-    @DataProvider(name = "dp")
+    @DataProvider(name = "dp" , indices = {0,4})   //if we specify the indices it will execute only those data
     String [][] loginData(){
         String data [][] = {
 
