@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="mySuite" thread-count="5" parallel="tests"> <!-- If we want to make the serial testing then remove the "Parallel" Tag from the suite-->
+
+    <test name="myTest">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+
+        <classes>
+
+            <class name="TESTNG_Framework.Parallel_Testing.parallelTest"></class>
+
+        </classes>
+
+    </test>
+
+    <test name="myTestedge">
+        <parameter name="browser" value="edge"/>
+
+        <classes>
+
+            <class name="TESTNG_Framework.Parallel_Testing.parallelTest"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
