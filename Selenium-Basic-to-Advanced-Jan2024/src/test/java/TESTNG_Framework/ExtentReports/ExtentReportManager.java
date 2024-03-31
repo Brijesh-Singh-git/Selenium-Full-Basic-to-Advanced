@@ -29,7 +29,7 @@ public class ExtentReportManager implements ITestListener
 
         extent.setSystemInfo("Computer Name","localhost");
         extent.setSystemInfo("Environment","QA");
-        extent.setSystemInfo("Tester Name","Pavan");
+        extent.setSystemInfo("Tester Name","Brijesh");
         extent.setSystemInfo("os","Windows10");
         extent.setSystemInfo("Browser name","Chrome,Firefox,Edge");
 
@@ -38,7 +38,7 @@ public class ExtentReportManager implements ITestListener
 
     public void onTestSuccess(ITestResult result) {
 
-        test = extent.createTest(result.getName()); // create a new enty in the report
+        test = extent.createTest(result.getName()); // create a new entry in the report
         test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 
     }

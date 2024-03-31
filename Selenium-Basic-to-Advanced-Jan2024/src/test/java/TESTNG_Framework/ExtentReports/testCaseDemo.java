@@ -8,9 +8,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+
+//@Listeners(TESTNG_Framework.ExtentReports.ExtentReportManager.class)  -- Approach is not preferable as if we have many test class we need to specify in every class therefore we use the xml file to exteute
 
 public class testCaseDemo {
     WebDriver driver;
