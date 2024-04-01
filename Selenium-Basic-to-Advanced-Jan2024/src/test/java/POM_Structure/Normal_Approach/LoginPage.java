@@ -1,4 +1,4 @@
-package POM_Structure;
+package POM_Structure.Normal_Approach;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ public class LoginPage {
     }
 
 
-    
+
 
     //Locators
     By logo_img = By.xpath("//div[@class='orangehrm-login-branding']/img");

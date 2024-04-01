@@ -1,4 +1,4 @@
-package POM_Structure;
+package POM_Structure.Normal_Approach.Page_Factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
