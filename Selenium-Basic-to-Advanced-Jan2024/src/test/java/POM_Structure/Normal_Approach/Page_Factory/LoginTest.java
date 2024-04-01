@@ -13,7 +13,7 @@ import java.time.Duration;
 public class LoginTest {
 
     WebDriver driver;
-    LoginPage lp;
+    LoginPage lp2;
 
     @BeforeClass
     void setup(){
@@ -28,8 +28,8 @@ public class LoginTest {
 
     @Test (priority = 1)
     void testLogo(){
-        lp = new LoginPage(driver);
-        Assert.assertEquals(lp.checkLogoPresence(), true);
+        lp2 = new LoginPage(driver);
+        Assert.assertEquals(lp2.checkLogoPresence(), true);
 
     }
 
@@ -37,9 +37,9 @@ public class LoginTest {
     @Test (priority = 2)
     void testLogin() throws InterruptedException {
 
-        lp.setUsername("Admin");
-        lp.setPassword("admin123");
-        lp.submitBtn();
+        lp2.setUsername("Admin");
+        lp2.setPassword("admin123");
+        lp2.submitBtn();
 
         Thread.sleep(4000);
 
